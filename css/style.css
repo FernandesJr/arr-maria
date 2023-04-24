@@ -63,6 +63,7 @@ body {
     margin: 0px;
     font-size: 4rem;
     font-family: 'DM Serif Display', serif;
+    line-height: 1em;
     color: #FFF;
 }
 
@@ -100,8 +101,16 @@ body {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-
     padding: 50px 0px;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.hidden-off {
+    opacity: 1;
+    transition: opacity 2.5s linear;
 }
 
 .banner-beneficios {
@@ -279,6 +288,10 @@ body {
 }
 
 @media (max-width: 600px) {
+
+    .title-gruop {
+        padding-top: 3rem;
+    }
 
     .photo-maria-sale, .photo-maria-animation {
         width: 21rem;
