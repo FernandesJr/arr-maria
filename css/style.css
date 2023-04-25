@@ -39,7 +39,7 @@ body {
     height: 320px;
     border-radius: 50%;
     background-color: #FB78AB;
-    box-shadow: 5px 5px 12px #FFF
+    box-shadow: -5px 5px 12px #FFF
 }
 
 #header-main {
@@ -69,7 +69,7 @@ body {
 
 .title-effect-woman {
     margin: 0px;
-    font-size: 5rem;
+    font-size: 6rem;
     font-family: 'Mrs Saint Delafield', cursive;
     font-weight: lighter;
     color: var(--orange-default);
@@ -110,7 +110,7 @@ body {
 
 .hidden-off {
     opacity: 1;
-    transition: opacity 2.5s linear;
+    transition: opacity 2s linear;
 }
 
 .banner-beneficios {
@@ -132,9 +132,10 @@ body {
 }
 
 /*To who*/
-
 .bar-who {
-    background-color: #FFF;
+    background-image: linear-gradient(19deg, rgba(249,79,145,1) 0%, rgba(180,32,76,1) 6%, rgba(255,255,255,1) 26%);
+    background-size: 200% 200%;
+    animation: bg-gradient 6s ease-in-out infinite;
 }
 
 .title-bar-who {
@@ -201,7 +202,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
     padding: 1.5rem;
     background-color: #ffffff8c;
     width: 320px;
@@ -279,11 +280,25 @@ body {
     }
   
     50% {
-      transform: translatey(-30px) rotate(8deg);
+      transform: translatey(30px) rotate(8deg);
     }
   
     100% {
       transform: translatey(0px) rotate(12deg);
+    }
+}
+
+@keyframes bg-gradient {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
     }
 }
 
