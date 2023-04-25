@@ -159,12 +159,51 @@ body {
     height: 200px;
     width: 200px;
     margin: 30px;
-    border: var(--primary-color-maria) solid 1px;
-    box-shadow: 1px 5px 7px rgba(0, 0, 0, 0.3);
+    box-shadow: -5px 5px 12px #FFF;
     border-radius: 50%;
-
     background-color: #FFF;
-    color: var(--primary-color-maria);
+    opacity: 0;
+}
+
+.bg-doctor {
+    background-image: url('../images/woman-main.png');
+    background-size: cover;
+}
+
+.bg-woman-01 {
+    background-image: url('../images/woman-01.png');
+    background-size: cover;
+}
+
+.bg-woman-02 {
+    background-image: url('../images/woman-02.png');
+    background-size: cover;
+}
+
+.bg-woman-03 {
+    background-image: url('../images/woman-03.png');
+    background-size: cover;
+}
+
+.bg-woman-04 {
+    background-image: url('../images/woman-04.png');
+    background-size: cover;
+}
+
+.bg-woman-05 {
+    background-image: url('../images/woman-05.png');
+    background-size: cover;
+}
+
+.text-who {
+    position: absolute;
+    top: 190px;
+    color: var(--orange-default);
+}
+
+.slide-top {
+	-webkit-animation: slide-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 /*Sale*/
@@ -251,6 +290,12 @@ body {
     font-weight: bold;
 }
 
+/**
+ * ----------------------------------------
+ * animations
+ * ----------------------------------------
+ */
+
 /*loop*/
 @keyframes moviment {
 
@@ -301,6 +346,31 @@ body {
         background-position: 0 50%;
     }
 }
+
+
+@-webkit-keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(100px);
+                transform: translateY(100px);
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+                opacity: 1;
+    }
+}
+@keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(100px);
+                transform: translateY(100px);
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+                opacity: 1;
+    }
+}
+  
 
 @media (max-width: 600px) {
 
