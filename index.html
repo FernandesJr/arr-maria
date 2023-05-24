@@ -4,83 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>landPage-Maria</title>
+    <link rel="stylesheet" href="./css/maria.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Arrelique Maria</title>
 </head>
 <body>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Mrs+Saint+Delafield&family=Yellowtail&display=swap');
-    </style>
-    <div class="bg-m"></div>
-    <section id="land-page">
-        <div class="circle-h"></div>
-        <section id="header-main">
-            <img src="images/arrelique-maria.png" alt="arrelique-maria" class="photo-maria-animation">
-            <div class="title-gruop">
-                <h2 class="title-effect">Feito para</h2>
-                <h2 class="title-effect">você</h2>
-                <h2 class="title-effect-woman">Mulher</h2>
-            </div>
-            <img src="images/gruop-woman.png" alt="mulheres-felizes" class="photo-women">
+    <main>
+        <section id="header-m" class="bg-pink">
+            <img src="./images/logo-siga-natural.png" alt="logo siga natural" class="logo-sn">
         </section>
-        <section id="beneficios">
-            <div class="bar">
-                <h2 class="title-bar">Benefícios</h2>
+        <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação" style="background-color: white">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav-m" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link nav-item-m active" href="#">DEPOIMENTOS</a>
+                <a class="nav-item nav-link nav-item-m" href="#">BENEFÍCIOS</a>
+                <a class="nav-item nav-link nav-item-m" href="#">PRA QUEM É INDICADO</a>
+                <a class="nav-item nav-link nav-item-m" href="#">PERGUNTAS FREQUENTES</a>
+              </div>
             </div>
-            <div class="banners-beneficios">
-                <div class="banner-beneficios hidden">
-                    <h3 class="text-beneficios">Suavidade</h3>
-                </div>
-                <div class="banner-beneficios hidden">
-                    <h3 class="text-beneficios">Leveza</h3>
-                </div>
-                <div class="banner-beneficios hidden">
-                    <h3 class="text-beneficios">Alívio</h3>
-                </div>
-                <div class="banner-beneficios hidden">
-                <h3 class="text-beneficios">Comodidade</h3>
-                </div>
-            </div>
-        </section>
-        <section id="to-who">
-            <div class="bar bar-who">
-                <h2 class="title-bar-who">Para quem o Arrelique Maria é indicado</h2>
-            </div>
-            <div class="banners-who">
-                <div class="banner-who bg-doctor">
-                    <h3 class="text-who">PERFIL</h3>
-                </div>
-                <div class="banner-who bg-woman-01">
-                    <h3 class="text-who">PERFIL</h3>
-                </div>
-                <div class="banner-who bg-woman-02">
-                    <h3 class="text-who">PERFIL</h3>
-                </div>
-                <div class="banner-who bg-woman-03">
-                    <h3 class="text-who">PERFIL</h3>
-                </div>
-                <div class="banner-who bg-woman-04">
-                    <h3 class="text-who">PERFIL</h3>
-                </div>
-                <div class="banner-who bg-woman-05">
-                    <h3 class="text-who">PERFIL</h3>
+        </nav>
+        <section>
+            <div class="banners-m">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="./images/banners/banner-01-full.jpg" alt="banner-disposição">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./images/banners/banner-02-full.jpg" alt="sem-desanimo">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./images/banners/banner-03-full.jpg" alt="sem-colicas">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./images/banners/banner-04-full.jpg" alt="bora-dar-up">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Próximo</span>
+                    </a>
                 </div>
             </div>
         </section>
-        <section id="sale">
-            <div class="sale-titles">
-                <h3 class="sale">Oferta</h3>
-                <p class="sale-min">Oferta</p>
-            </div>
-            <div class="card-sale">
-                <div class="line"></div>
-                <img src="images/arrelique-maria.png" alt="arrelique-maria" class="photo-maria-sale">
-                <div class="line"></div>
-                <p class="name-product-ld">Arrelique Maria</p>
-                <p class="price-product-ld">R$ 46,50</p>
-                <a href="https://www.siganatural.com.br/arrelique/arrelique-maria" class="btn-pay">Comprar</a>
-            </div>
-        </section>
-    </section>
-    <script src="js/arr-maria.js"></script>
+    </main>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="./js/arr-maria.js"></script>
 </body>
+</html>
