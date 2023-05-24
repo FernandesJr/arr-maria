@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+}
+
+main {
+    --primary-color-maria: #FE1672;
+    --pink-dark: #D61261;
+    --pink-light: #FF4D9E;
+    --yellow: #FFE600;
+    --white: #FFFFFF;
+
+    background: var(--primary-color-maria);
+}
+
+.bg-pink {
+    background-color: var(--primary-color-maria);
+}
+
+.logo-sn {
+    width: 170px;
+}
+
+.navbar {
+    background: var(--pink-dark);
+}
+
+.nav-m {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item-m {
+    color: var(--white) !important;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 0px 20px !important;
+}
+
+.nav-link.active {
+    color: var(--white) !important;
+}
+
+.banners-m {
+    margin: auto;
+    padding: 30px 0;
+    max-width: 800px;
+}
