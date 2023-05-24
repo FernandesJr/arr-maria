@@ -45,3 +45,26 @@ main {
     padding: 30px 0;
     max-width: 800px;
 }
+
+/*Who like*/
+.title-who {
+    margin-bottom: 15px;
+    padding: 15px 0;
+    text-align: center;
+    background-color: var(--pink-dark);
+    color: var(--white);
+}
+
+.title-who h2 {
+    font-size: 1.6rem;
+}
+
+.videos-m {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.videos-m video {
+    margin: 30px 15px;
+}
