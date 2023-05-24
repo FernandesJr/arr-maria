@@ -30,10 +30,11 @@ main {
 }
 
 .nav-item-m {
-    color: var(--white) !important;
+    padding: 0px 20px !important;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.3rem;
     font-weight: bold;
-    padding: 0px 20px !important;
+    color: var(--white) !important;
 }
 
 .nav-link.active {
@@ -56,6 +57,8 @@ main {
 }
 
 .title-who h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     font-size: 1.6rem;
 }
 
@@ -67,4 +70,82 @@ main {
 
 .videos-m video {
     margin: 30px 15px;
+}
+
+/*Benefits*/
+
+#benefits {
+    padding: 30px 0;
+    background: var(--white);
+}
+
+.benefits-title {
+    margin: 30px 0;
+    padding: 15px 0;
+    text-align: center;
+    background: var(--pink-dark);
+    color: var(--white);
+}
+
+.benefits-title h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.content-cards {
+    margin: auto;
+    max-width: 1060px;
+}
+
+.compose-m {
+    max-width: 450px;
+    color: var(--pink-dark);
+}
+
+.compose-m p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.cards-m {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-benefit {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 15px 15px 0;
+    padding: 20px;
+    max-width: 300px;
+    min-height: 380px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 30%);
+    background: var(--primary-color-maria);
+    color: var(--white);
+
+}
+
+.card-benefit p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+}
+
+.font-bold-m {
+    font-weight: 800;
+}
+
+.icon-height {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.card-benefit img {
+    padding: 15px;
+    width: 90px;
 }
