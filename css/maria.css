@@ -70,6 +70,7 @@ main {
 
 .videos-m video {
     margin: 30px 15px;
+    max-width: 400px
 }
 
 /*Benefits*/
@@ -91,6 +92,11 @@ main {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 1.6rem;
+}
+
+.benefit-p {
+    padding-left: 15px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .content-cards {
@@ -148,4 +154,103 @@ main {
 .card-benefit img {
     padding: 15px;
     width: 90px;
+}
+
+/*TO WHO*/
+
+
+.to-who-title {
+    margin: 30px 0;
+    padding: 15px 0;
+    text-align: center;
+    background: var(--pink-dark);
+    color: var(--white);
+}
+
+.to-who-title h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.cards-woman {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 950px;
+    margin: auto;
+}
+
+.base-total-woman {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    min-height: 270px;
+    max-width: 245px;
+}
+
+.base-total-woman h3 {
+    padding-top: 5px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #8d0d40;
+}
+
+.base-card-woman {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: var(--white);
+}
+
+.card-woman {
+    margin: auto;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 30%);
+}
+
+#women-01 {
+    background: url("../images/women/casa-qd-min.jpg");
+    background-size: cover; 
+}
+
+#women-02 {
+    background: url("../images/women/jovem-qd-min.jpg");
+    background-size: cover; 
+}
+
+#women-03 {
+    background: url("../images/women/work-qd-min.jpg");
+    background-size: cover; 
+}
+
+#women-04 {
+    background: url("../images/women/adolescente-qd-min.jpg");
+    background-size: cover; 
+}
+
+#women-05 {
+    background: url("../images/women/senhora-qd-min.jpg");
+    background-size: cover; 
+}
+
+#women-06 {
+    background: url("../images/women/loira-qr-min.jpg");
+    background-size: cover; 
+}
+
+
+/*media query*/
+
+@media (max-width: 450px) {
+    .videos-m video {
+        width: 350px
+    }
 }
