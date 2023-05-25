@@ -12,6 +12,10 @@ main {
     background: var(--primary-color-maria);
 }
 
+.bg-white {
+    background-color: var(--white);
+}
+
 .bg-pink {
     background-color: var(--primary-color-maria);
 }
@@ -244,6 +248,133 @@ main {
 #women-06 {
     background: url("../images/women/loira-qr-min.jpg");
     background-size: cover; 
+}
+
+/*Sales*/
+
+#sale {
+    margin-top: 10px;
+    padding-top: 15px;
+}
+
+.sale-title {
+    padding: 40px;
+}
+
+.sale-title h3 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--pink-dark);
+}
+
+.sale-title h3 strong {
+    font-weight: 800;
+}
+
+.cards-sale {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-sale-m {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 25px 0;
+    padding: 15px;
+    border-radius: 20px;
+    width: 315px;
+    height: 440px;
+    background-color: var(--primary-color-maria);
+    color: var(--white);
+}
+
+.card-sale-g {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 20px;
+    width: 350px;
+    height: 510px;
+    background-color: var(--pink-dark);
+    color: var(--white);
+}
+
+.card-sale-m img {
+    width: 140px;
+}
+
+.two-uni {
+    margin: 10px;
+    width: 155px;
+}
+
+.four-uni {
+    width: 230px !important;
+}
+
+.card-sale-m p {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0 2px;
+    max-width: 140px;
+}
+
+.description-p {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0 2px;
+    max-width: 140px;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.price-p {
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+.price-part {
+    display: flex;
+    align-items: center;
+}
+
+.price-part-i {
+    font-size: 1.4rem;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.price-part-b {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: .98;
+}
+
+.buy {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--yellow);
+    color: var(--pink-dark);
+    text-decoration: none;
+}
+
+.buy:hover {
+    text-decoration: none;
+    border: #8d0d40 solid 1px;
+    background: transparent;
+    color: var(--yellow);
 }
 
 
