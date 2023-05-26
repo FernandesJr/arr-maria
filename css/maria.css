@@ -254,7 +254,7 @@ main {
 
 #sale {
     margin-top: 10px;
-    padding-top: 15px;
+    padding: 15px 0 50px 0;
 }
 
 .sale-title {
@@ -377,11 +377,100 @@ main {
     color: var(--yellow);
 }
 
+/*Questions*/
+
+#questions {
+    padding: 90px;
+    color: var(--white);
+}
+
+.questions-title {
+    font-size: 2.1rem;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.question {
+    margin: 1rem 0;
+    max-width: 650px;
+    font-size: 1rem;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ans {
+    margin: 0.5rem 0;
+    max-width: 650px;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+}
+
+.line {
+    max-width: 650px;
+    height: 1px;
+    background-color: var(--white);
+}
+
+
+/*Contacts*/
+
+#contacts {
+    padding-bottom: 90px;
+}
+
+.contatcs-title {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.7rem;
+    font-weight: 800;
+    color: var(--white);
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: var(--white);
+}
+
+.contacts-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 30px;
+    height: 40px;
+}
+
+.contacts-item p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    margin: 0;
+}
+
+.icon-whats {
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.icon-mail {
+    margin: 0 5px;
+    width: 30px;
+    height: 23px;
+}
 
 /*media query*/
 
 @media (max-width: 450px) {
     .videos-m video {
         width: 350px
+    }
+
+    #questions {
+        padding: 70px 30px;
+    }
+    .contacts-item p {
+        font-size: 1rem;
     }
 }
