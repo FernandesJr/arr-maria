@@ -25,6 +25,10 @@ main {
     width: 170px;
 }
 
+.menu {
+    width: 50px;
+}
+
 .navbar {
     background: var(--pink-dark);
 }
@@ -40,6 +44,10 @@ main {
     font-size: 1.3rem;
     font-weight: bold;
     color: var(--white) !important;
+}
+
+.nav-item:hover {
+    color: var(--pink-light) !important;
 }
 
 .nav-link.active {
