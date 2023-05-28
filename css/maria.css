@@ -9,6 +9,7 @@ main {
     --yellow: #FFE600;
     --white: #FFFFFF;
 
+    position: relative;
     background: var(--primary-color-maria);
 }
 
@@ -139,9 +140,14 @@ main {
 
 }
 
-.card-benefit p {
+.card-benefit-p {
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
+    opacity: 0;
+}
+
+.slide-left {
+    animation: slide-left 2s ease-in-out forwards;
 }
 
 .font-bold-m {
@@ -220,34 +226,44 @@ main {
     box-shadow: 5px 5px 5px rgb(0 0 0 / 30%);
 }
 
+.slide-top {
+    animation: slide-top 1.5s ease-in-out forwards;
+}
+
 #women-01 {
     background: url("../images/women/casa-qd-min.jpg");
-    background-size: cover; 
+    background-size: cover;
+    opacity: 0;
 }
 
 #women-02 {
     background: url("../images/women/jovem-qd-min.jpg");
-    background-size: cover; 
+    background-size: cover;
+    opacity: 0;
 }
 
 #women-03 {
     background: url("../images/women/work-qd-min.jpg");
-    background-size: cover; 
+    background-size: cover;
+    opacity: 0;
 }
 
 #women-04 {
     background: url("../images/women/adolescente-qd-min.jpg");
-    background-size: cover; 
+    background-size: cover;
+    opacity: 0;
 }
 
 #women-05 {
     background: url("../images/women/senhora-qd-min.jpg");
-    background-size: cover; 
+    background-size: cover;
+    opacity: 0;
 }
 
 #women-06 {
     background: url("../images/women/loira-qr-min.jpg");
-    background-size: cover; 
+    background-size: cover;
+    opacity: 0;
 }
 
 /*Sales*/
@@ -362,6 +378,7 @@ main {
     margin: 5px 0;
     padding: 10px;
     border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
     font-size: 1.1rem;
     font-weight: 800;
     font-family: 'Montserrat', sans-serif;
@@ -448,6 +465,20 @@ main {
     margin: 0;
 }
 
+.contacts-item a {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.contacts-item a:hover {
+    text-decoration: none;
+    color: var(--pink-dark);
+}
+
 .icon-whats {
     margin: 0 5px;
     width: 30px;
@@ -460,6 +491,66 @@ main {
     height: 23px;
 }
 
+/*WhatsApp*/
+.whats {
+    position: fixed;
+    right: 10px;
+    bottom: 80px;
+    width: 55px;
+}
+
+.whats a img {
+    width: 100%;
+}
+
+/*Animation*/
+
+@-webkit-keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(100px);
+                transform: translateY(100px);
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+                opacity: 1;
+    }
+}
+@keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(100px);
+                transform: translateY(100px);
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+                opacity: 1;
+    }
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(-100px);
+                transform: translateX(-100px);
+    }
+    100% {
+        -webkit-transform: translateX(0px);
+                transform: translateX(0px);
+                opacity: 1;
+    }
+}
+@keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(-100px);
+                transform: translateX(-100px);
+    }
+    100% {
+        -webkit-transform: translateX(0px);
+                transform: translateX(0px);
+                opacity: 1;
+    }
+}
+
 /*media query*/
 
 @media (max-width: 450px) {
@@ -470,7 +561,12 @@ main {
     #questions {
         padding: 70px 30px;
     }
+
     .contacts-item p {
+        font-size: 1rem;
+    }
+
+    .contacts-item a {
         font-size: 1rem;
     }
 }
