@@ -79,11 +79,35 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: auto;
+    max-width: 1300px;
 }
 
-.videos-m video {
+.video-container {
+    position: relative;
     margin: 30px 15px;
-    max-width: 400px
+}
+
+.play-video {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    margin: 0px;
+    top: 15%;
+    left: 35%;
+    cursor: pointer;
+    width: 130px;
+}
+
+.play-img {
+    margin: auto;
+    opacity: .5;
+    width: 130px;
+}
+
+.video-women {
+    margin: 0px;
+    max-width: 400px;
 }
 
 /*Benefits*/
@@ -241,6 +265,7 @@ main {
 #women-01 {
     background: url("../images/women/casa-qd-min.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     opacity: 0;
 }
 
@@ -576,5 +601,10 @@ main {
 
     .contacts-item a {
         font-size: 1rem;
+    }
+
+    .whats {
+        bottom: 65px;
+        width: 50px;
     }
 }

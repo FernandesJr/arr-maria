@@ -92,21 +92,57 @@
             <h2>VEJA O QUE QUEM JÁ EXPERIMENTOU TEM A DIZER</h2>
           </div>
           <div class="videos-m">
-            <video controls autoplay>
-              <source src="./videos/video-01.mp4">
-            </video>
-            <video controls poster="./images/video-cover/cover-02.jpg">
-              <source src="./videos/video-02.mp4" type="video/mp4">
-            </video>
-            <video controls poster="./images/video-cover/cover-03.jpg">
-              <source src="./videos/video-03.mp4" type="video/mp4">
-            </video>
-            <video controls poster="./images/video-cover/cover-04.jpg">
-              <source src="./videos/video-04.mp4" type="video/mp4">
-            </video>
-            <video controls poster="./images/video-cover/cover-05.jpg">
-              <source src="./videos/video-05.mp4" type="video/mp4">
-            </video>
+            
+            <div class="video-container">
+              <video id="video-1" class="video-women">
+                <source src="./videos/video-01.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+              </video>
+              <div class="play-video" onclick="playVideo(1)" id="icon-play-1">
+                <img src="./images/video-cover/icon-play-video.png" alt="play video" class="play-img">
+              </div>
+            </div>
+
+            <div class="video-container">
+              <video poster="./images/video-cover/cover-02.jpg" id="video-2" class="video-women">
+                <source src="./videos/video-02.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+              </video>
+              <div class="play-video" onclick="playVideo(2)" id="icon-play-2">
+                <img src="./images/video-cover/icon-play-video.png" alt="play video" class="play-img">
+              </div>
+            </div>
+
+            <div class="video-container">
+              <video poster="./images/video-cover/cover-03.jpg" id="video-3" class="video-women">
+                <source src="./videos/video-03.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+              </video>
+              <div class="play-video"  onclick="playVideo(3)" id="icon-play-3">
+                <img src="./images/video-cover/icon-play-video.png" alt="play video" class="play-img">
+              </div>
+            </div>
+
+            <div class="video-container">
+              <video poster="./images/video-cover/cover-04.jpg" id="video-4" class="video-women">
+                <source src="./videos/video-04.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+              </video>
+              <div class="play-video" onclick="playVideo(4)" id="icon-play-4">
+                <img src="./images/video-cover/icon-play-video.png" alt="play video" class="play-img">
+              </div>
+            </div>
+
+            <div class="video-container">
+              <video poster="./images/video-cover/cover-05.jpg" id="video-5" class="video-women">
+                <source src="./videos/video-05.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+              </video>
+              <div class="play-video" onclick="playVideo(5)" id="icon-play-5">
+                <img src="./images/video-cover/icon-play-video.png" alt="play video" class="play-img">
+              </div>
+            </div>
+            
           </div>
         </section>
         <section id="benefits">
