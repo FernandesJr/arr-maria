@@ -2,6 +2,14 @@
     margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+ 
+:target {
+  scroll-margin-top: .8em;
+}
+
 main {
     --primary-color-maria: #FE1672;
     --pink-dark: #D61261;
@@ -108,6 +116,8 @@ main {
 .video-women {
     margin: 0px;
     max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
 /*Benefits*/

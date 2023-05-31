@@ -29,7 +29,7 @@ Array.from(document.querySelectorAll('.card-benefit-p')).forEach(element => {
   observerBenefit.observe(element);
 });
 
-/*Autoplay on the first video*/
+/*Autoplay on the first video
 const observerVideo = new IntersectionObserver(entries => {
   entries.forEach( entry => {
     if (entry.isIntersecting && !playFirstVideoOneTime) {
@@ -41,7 +41,7 @@ const observerVideo = new IntersectionObserver(entries => {
 });
 
 const firstVideo = document.getElementById('video-1');
-observerVideo.observe(firstVideo);
+observerVideo.observe(firstVideo);*/
 
 
 function playVideo(id) {
