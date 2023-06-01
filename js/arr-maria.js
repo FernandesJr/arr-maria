@@ -1,9 +1,9 @@
-let playFirstVideoOneTime = false;
+//var playFirstVideoOneTime = false;
 
+/*Add menu fixed on the scrool*/
 const nav = document.getElementsByTagName('nav')[0];
 const topNav = nav.offsetTop; //Return the height of the distance from the father
 
-/*Add menu fixed on the scrool*/
 window.onscroll = function() {
   fixedMenu();
 }
@@ -13,6 +13,21 @@ function fixedMenu() {
     nav.classList.add('nav-fixed');
   } else {
     nav.classList.remove('nav-fixed');
+  }
+}
+
+
+/*Change icon menu */
+const iconMenu = document.getElementById('menu');
+var iconBar = true;
+
+function changeIconMenu() {
+  if (iconBar) {
+    iconMenu.setAttribute('src','./images/icons/icon-close.png');
+    iconBar = false;
+  } else {
+    iconMenu.setAttribute('src','./images/icons/icon-menu.png');
+    iconBar = true;
   }
 }
 
@@ -43,6 +58,16 @@ Array.from(document.querySelectorAll('.card-benefit-p')).forEach(element => {
   observerBenefit.observe(element);
 });
 
+
+function playVideo(id) {
+  let icon = document.getElementById('icon-play-'+ id);
+  let video = document.getElementById('video-' + id);
+  icon.remove();
+  video.play();
+  video.setAttribute('controls', '');
+}
+
+
 /*Autoplay on the first video
 const observerVideo = new IntersectionObserver(entries => {
   entries.forEach( entry => {
@@ -56,12 +81,3 @@ const observerVideo = new IntersectionObserver(entries => {
 
 const firstVideo = document.getElementById('video-1');
 observerVideo.observe(firstVideo);*/
-
-
-function playVideo(id) {
-  let icon = document.getElementById('icon-play-'+ id);
-  let video = document.getElementById('video-' + id);
-  icon.remove();
-  video.play();
-  video.setAttribute('controls', '');
-}

@@ -606,6 +606,12 @@ main {
 /*media query*/
 
 @media (max-width: 450px) {
+
+    :target {
+        /*stop 45px above the target*/
+        scroll-margin-top: 60px;
+    }
+
     .videos-m video {
         width: 350px
     }
