@@ -3,11 +3,12 @@
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
  
 :target {
-  scroll-margin-top: .8em;
+    /*stop 45px above the target*/
+    scroll-margin-top: 45px;
 }
 
 main {
@@ -60,6 +61,14 @@ main {
 
 .nav-link.active {
     color: var(--white) !important;
+}
+
+.nav-fixed {
+    position: fixed !important; 
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 20;
 }
 
 .banners-m {

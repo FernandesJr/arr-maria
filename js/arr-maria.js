@@ -1,5 +1,22 @@
 let playFirstVideoOneTime = false;
 
+const nav = document.getElementsByTagName('nav')[0];
+const topNav = nav.offsetTop; //Return the height of the distance from the father
+
+/*Add menu fixed on the scrool*/
+window.onscroll = function() {
+  fixedMenu();
+}
+
+function fixedMenu() {
+  if(window.pageYOffset >= topNav) {
+    nav.classList.add('nav-fixed');
+  } else {
+    nav.classList.remove('nav-fixed');
+  }
+}
+
+
 /*slide top of elements 'woman'*/
 const observerHoman = new IntersectionObserver(entries => {
   entries.forEach(entry => {
@@ -12,9 +29,6 @@ const observerHoman = new IntersectionObserver(entries => {
 Array.from(document.querySelectorAll('.card-woman')).forEach(element => {
   observerHoman.observe(element)
 });
-
-
-/*New project*/
 
 /*slide left of elements 'card benefit'*/
 const observerBenefit = new IntersectionObserver(entries => {
