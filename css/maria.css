@@ -74,7 +74,7 @@ main {
 .banners-m {
     margin: auto;
     padding: 30px 0;
-    max-width: 800px;
+    max-width: 1000px;
 }
 
 /*Who like*/
@@ -273,49 +273,17 @@ main {
     margin: auto;
     width: 180px;
     height: 180px;
+}
+
+.card-woman-img {
+    width: 100%;
     border-radius: 50%;
     box-shadow: 5px 5px 5px rgb(0 0 0 / 30%);
+    opacity: 0;
 }
 
 .slide-top {
-    animation: slide-top 1.5s ease-in-out forwards;
-}
-
-#women-01 {
-    background: url("../images/women/casa-qd-min.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0;
-}
-
-#women-02 {
-    background: url("../images/women/jovem-qd-min.jpg");
-    background-size: cover;
-    opacity: 0;
-}
-
-#women-03 {
-    background: url("../images/women/work-qd-min.jpg");
-    background-size: cover;
-    opacity: 0;
-}
-
-#women-04 {
-    background: url("../images/women/adolescente-qd-min.jpg");
-    background-size: cover;
-    opacity: 0;
-}
-
-#women-05 {
-    background: url("../images/women/senhora-qd-min.jpg");
-    background-size: cover;
-    opacity: 0;
-}
-
-#women-06 {
-    background: url("../images/women/loira-qr-min.jpg");
-    background-size: cover;
-    opacity: 0;
+    animation: slide-top 1s ease-in-out forwards;
 }
 
 /*Sales*/

@@ -41,7 +41,7 @@ const observerHoman = new IntersectionObserver(entries => {
   });
 }, {threshold: 1}); //Only show the element when all visible
 
-Array.from(document.querySelectorAll('.card-woman')).forEach(element => {
+Array.from(document.querySelectorAll('.card-woman-img')).forEach(element => {
   observerHoman.observe(element)
 });
 
