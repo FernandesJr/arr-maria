@@ -42,6 +42,15 @@ main {
     background: var(--pink-dark);
 }
 
+.navbar-toggler {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu-name {
+    color: var(--white);
+}
+
 .nav-m {
     display: flex;
     justify-content: center;
