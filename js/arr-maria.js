@@ -67,6 +67,16 @@ function playVideo(id) {
   video.setAttribute('controls', '');
 }
 
+/*Uri dos demais produtos ainda pedente*/
+function redirectToPay(value) {
+  if (value === "p") {
+    window.location.href = "https://www.siganatural.com.br/arrelique/arrelique-maria"
+  } else if (value === "m") {
+    window.location.href = "https://www.siganatural.com.br/arrelique/arrelique-maria"
+  } else {
+    window.location.href = "https://www.siganatural.com.br/arrelique/arrelique-maria"
+  }
+}
 
 /*Autoplay on the first video
 const observerVideo = new IntersectionObserver(entries => {

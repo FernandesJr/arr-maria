@@ -460,6 +460,7 @@ main {
     height: 460px;
     background-color: var(--primary-color-maria);
     color: var(--white);
+    cursor: pointer;
 }
 
 .card-sale-m:hover {
@@ -477,6 +478,7 @@ main {
     height: 510px;
     background-color: var(--pink-dark);
     color: var(--white);
+    cursor: pointer;
 }
 
 .card-sale-g:hover {
