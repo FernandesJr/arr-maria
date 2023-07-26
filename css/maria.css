@@ -81,9 +81,29 @@ main {
 }
 
 .banners-m {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 30px auto;
     padding: 30px 0;
     background-color: var(--pink-dark);
+}
+
+.only-mobile {
+    display: none;
+}
+
+.only-desktop {
+    display: none;
+}
+
+.photo-arrelique {
+    max-width: 400px;
+    animation: float 6s ease-in-out infinite;
+}
+
+.banner-arrelique-img {
+    width: 300px;
 }
 
 .info-banner {
@@ -119,7 +139,19 @@ main {
 }
 
 .info-a {
+    display: inline-block;
+    width: 342px;
     font-size: 1.2rem !important;
+    animation: pulsar 2s infinite;
+}
+
+.info-a:hover {
+    display: inline-block !important;
+}
+
+.content-btn-buy {
+    margin: 20px auto;
+    text-align: center;
 }
 
 /*Who like*/
@@ -425,9 +457,13 @@ main {
     padding: 15px;
     border-radius: 20px;
     width: 315px;
-    height: 440px;
+    height: 460px;
     background-color: var(--primary-color-maria);
     color: var(--white);
+}
+
+.card-sale-m:hover {
+    transform: scale(1.05);
 }
 
 .card-sale-g {
@@ -441,6 +477,10 @@ main {
     height: 510px;
     background-color: var(--pink-dark);
     color: var(--white);
+}
+
+.card-sale-g:hover {
+    transform: scale(1.05);
 }
 
 .card-sale-m img {
@@ -499,6 +539,8 @@ main {
 .buy {
     margin: 5px 0;
     padding: 10px;
+    box-sizing: border-box;
+    height: 50px;
     border-radius: 10px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
     font-size: 1.1rem;
@@ -613,6 +655,21 @@ main {
     height: 23px;
 }
 
+/*footer*/
+
+footer {
+    padding: 20px;
+    background: var(--white);
+}
+
+.logo-footer {
+    text-align: center;
+}
+
+.logo-footer > a > img {
+    width: 135px;
+}
+
 /*WhatsApp*/
 .whats {
     position: fixed;
@@ -627,6 +684,34 @@ main {
 }
 
 /*Animation*/
+
+
+@keyframes pulsar {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.03);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+  
+
+@keyframes float {
+    0% {
+      transform: translatey(-10px);
+    }
+  
+    50% {
+      transform: translatey(10px);
+    }
+  
+    100% {
+      transform: translatey(-10px);
+    }
+  }
 
 @-webkit-keyframes slide-top {
     0% {
@@ -683,6 +768,10 @@ main {
         scroll-margin-top: 60px;
     }
 
+    .only-mobile {
+        display: block;
+    }
+
     .videos-m video {
         width: 350px
     }
@@ -704,3 +793,26 @@ main {
         width: 50px;
     }
 }
+
+@media (min-width: 451px) and (max-width: 800px){
+
+    .only-desktop {
+        display: block;
+    }
+
+    .banner-arrelique-img {
+        width: 350px;
+    }
+}
+
+@media (min-width: 800px) {
+
+    .only-desktop {
+        display: block;
+    }
+
+    .banner-arrelique-img {
+        width: 450px;
+    }
+}
+
