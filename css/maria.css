@@ -80,6 +80,10 @@ main {
     z-index: 20;
 }
 
+.navbar-toggler:focus {
+    outline: 0px;
+}
+
 .banners-m {
     display: flex;
     flex-wrap: wrap;
@@ -776,6 +780,10 @@ footer {
 
     .videos-m video {
         width: 350px
+    }
+
+    .card-benefit {
+        margin: 0px 0px 15px 0px;
     }
 
     #questions {
