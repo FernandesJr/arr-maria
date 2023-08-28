@@ -3,6 +3,8 @@
 /*Add menu fixed on the scrool*/
 const nav = document.getElementsByTagName('nav')[0];
 const topNav = nav.offsetTop; //Return the height of the distance from the father
+const showProduct = document.getElementById('show-product');
+const widthScreen = window.innerWidth;
 
 window.onscroll = function() {
   fixedMenu();
@@ -11,8 +13,14 @@ window.onscroll = function() {
 function fixedMenu() {
   if(window.pageYOffset >= topNav) {
     nav.classList.add('nav-fixed');
+    if (widthScreen >= 1039) {
+      showProduct.style.marginTop = '48px'; //Adjust when fixing the nav
+    }else {
+      showProduct.style.marginTop = '100px'; //Adjust when fixing the nav
+    }
   } else {
     nav.classList.remove('nav-fixed');
+    showProduct.style.marginTop = '0px';
   }
 }
 
@@ -69,9 +77,11 @@ function playVideo(id) {
 
 /*Uri dos demais produtos ainda pedente*/
 function redirectToPay(value) {
-  if (value === "p") {
+  if (value === 1) {
     window.location.href = "https://www.siganatural.com.br/arrelique/arrelique-maria"
-  } else if (value === "m") {
+  } else if (value === 3) {
+    window.location.href = "https://www.siganatural.com.br/arrelique/arrelique-maria"
+  } else if (value === 5) {
     window.location.href = "https://www.siganatural.com.br/arrelique/arrelique-maria"
   } else {
     window.location.href = "https://www.siganatural.com.br/arrelique/arrelique-maria"

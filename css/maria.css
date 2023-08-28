@@ -84,6 +84,10 @@ main {
     outline: 0px;
 }
 
+#show-product {
+    
+}
+
 .banners-m {
     display: flex;
     flex-wrap: wrap;
@@ -450,6 +454,7 @@ main {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    padding: 10px;
 }
 
 .card-sale-m {
@@ -457,11 +462,11 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 25px 0;
+    margin: 25px 10px;
     padding: 15px;
     border-radius: 20px;
     width: 315px;
-    height: 460px;
+    height: 510px;
     background-color: var(--primary-color-maria);
     color: var(--white);
     cursor: pointer;
@@ -476,10 +481,11 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 0 10px;
     padding: 15px;
     border-radius: 20px;
     width: 350px;
-    height: 510px;
+    height: 550px;
     background-color: var(--pink-dark);
     color: var(--white);
     cursor: pointer;
@@ -493,12 +499,12 @@ main {
     width: 140px;
 }
 
-.two-uni {
+.three-uni {
     margin: 10px;
     width: 155px;
 }
 
-.four-uni {
+.many-uni {
     width: 230px !important;
 }
 
@@ -518,6 +524,11 @@ main {
     max-width: 140px;
     font-size: .8rem;
     font-weight: 600;
+}
+
+.scratched {
+    text-decoration: line-through;
+    opacity: .8;
 }
 
 .price-p {
@@ -562,6 +573,14 @@ main {
     border: #8d0d40 solid 1px;
     background: transparent;
     color: var(--yellow);
+}
+
+.frete-free {
+    margin: 5px 0;
+    width: 120px;
+    border-radius: 20px;
+    background-color: var(--white);
+    color: var(--primary-color-maria);
 }
 
 /*Questions*/
