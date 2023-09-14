@@ -492,16 +492,16 @@ main {
 }
 
 .card-sale-m img {
-    width: 140px;
+    width: 220px;
 }
 
 .three-uni {
     margin: 10px;
-    width: 155px;
+    width: 230px;
 }
 
 .many-uni {
-    width: 230px !important;
+    width: 245px !important;
 }
 
 .card-sale-m p {
@@ -528,6 +528,7 @@ main {
 }
 
 .price-p {
+    margin: 0;
     font-size: 1.1rem;
     font-weight: 800;
 }
@@ -544,6 +545,7 @@ main {
 }
 
 .price-part-b {
+    margin-left: 3px;
     font-size: 4rem;
     font-weight: 800;
     line-height: .98;

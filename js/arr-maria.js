@@ -80,11 +80,11 @@ function redirectToPay(value) {
   if (value === 1) {
     window.location.href = "https://www.siganatural.com.br/arrelique/arrelique-maria"
   } else if (value === 3) {
-    window.location.href = "https://www.siganatural.com.br/arrelique/arrelique-maria"
+    window.location.href = "https://www.siganatural.com.br/arrelique/arrelique-maria-3-un"
   } else if (value === 5) {
-    window.location.href = "https://www.siganatural.com.br/arrelique/arrelique-maria"
+    window.location.href = "https://www.siganatural.com.br/arrelique/arrelique-maria-5-un"
   } else {
-    window.location.href = "https://www.siganatural.com.br/arrelique/arrelique-maria"
+    window.location.href = "https://www.siganatural.com.br/arrelique/arrelique-maria-7-un"
   }
 }
 
