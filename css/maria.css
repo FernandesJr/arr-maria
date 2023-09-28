@@ -455,12 +455,12 @@ main {
 }
 
 .card-sale-m {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: 25px 10px;
-    padding: 15px;
     border-radius: 20px;
     width: 315px;
     height: 510px;
@@ -474,15 +474,15 @@ main {
 }
 
 .card-sale-g {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: 0 10px;
-    padding: 15px;
     border-radius: 20px;
     width: 350px;
-    height: 550px;
+    height: 555px;
     background-color: var(--pink-dark);
     color: var(--white);
     cursor: pointer;
@@ -497,12 +497,13 @@ main {
 }
 
 .three-uni {
-    margin: 10px;
+    margin: -10px 0 10px 0;
     width: 230px;
 }
 
 .many-uni {
     width: 245px !important;
+    margin-top: -20px;
 }
 
 .card-sale-m p {
@@ -580,6 +581,23 @@ main {
     border-radius: 20px;
     background-color: var(--white);
     color: var(--primary-color-maria);
+}
+
+.economy {
+    position: absolute;
+    bottom: -2px;
+    height: 30px;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+    background-color: var(--yellow);
+    color: var(--pink-dark);
+}
+
+.economy > p {
+    margin: 0;
+    max-width: 500px !important;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /*Questions*/
@@ -697,7 +715,7 @@ footer {
 /*WhatsApp*/
 .whats {
     position: fixed;
-    right: 10px;
+    right: 13px;
     bottom: 80px;
     width: 55px;
     z-index: 12;
